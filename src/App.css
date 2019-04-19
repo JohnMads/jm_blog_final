@@ -1,0 +1,151 @@
+body {
+  margin: 0px;
+  background-color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "header header"
+                   "main news"
+                   "footer footer";
+  grid-template-columns: 1.8fr 1fr;
+  grid-template-rows: 100px 
+                      1fr
+                      40px;
+  min-height: 100vh;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-areas: "header header"
+                   "main news"
+                   "footer footer";
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 100px 
+                      1fr
+                      40px;
+  min-height: 100vh;
+}
+
+.home-image {
+  grid-area: header;
+  z-index: 1;
+  box-shadow:0px 3px 3px #D0D0D0;
+}
+
+.header-logo {
+  display: inline-block;
+}
+
+.header-logo img {
+  max-height: 8%;
+  max-width: 8%;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  z-index: 2;
+}
+
+.home-button {
+  float: right;
+  padding-right: 40px;
+  font-size: 25px;
+  color: #cacdd1;
+  font-weight: bold;
+}
+
+.header-words {
+  font-size: 18px;
+  color: #D0D0D0;
+  padding-top: 10px;
+  padding-left: 120px;
+}
+
+.header-name {
+  grid-area: header;
+  border-bottom: 2px solid black;
+  padding-left: 20px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.main {
+  grid-area: main;
+  margin-bottom: 0;
+  border-right: 1px solid #D0D0D0;
+}
+
+.main-blog {
+  padding: 100px;
+}
+
+.blog {
+  border-top: 2px solid #f1f1f1;
+}
+
+.main-blog img {
+  height: 30%;
+  width: 30%;
+}
+
+.blog-info {
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.blog-text {
+  padding-left: 50px;
+  padding-top: 50px;
+  display: inline-block;
+  height: 150px;
+  width: 400px;
+  position: absolute;
+}
+
+.news-items {
+  grid-area: news;
+}
+
+.news-info img{
+  height: 30%;
+  width: 30%;
+  padding-bottom: 50px;
+}
+
+.news-title {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 400;
+  height: 120px;
+  width: 300px;
+  position: absolute;
+  padding-left: 250px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.blog-content {
+  grid-area: main;
+  margin: 20px;
+  padding-left: 50px;
+}
+
+.blog-content img {
+  height: 50%;
+  width: 50%;
+}
+
+.footer-container {
+  grid-area: footer;
+  background-color: #cacdd1;
+  border-top: 3px solid #29D391;
+  height: 100px;
+}
+
+#footer {
+  text-align: right;
+  font-family:  'Fjalla One', sans-serif;
+  color: white;
+  padding-right: 30px;
+}
